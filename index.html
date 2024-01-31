@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lan="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Libreria Fontawesome, todo el paquete: https://cdnjs.com/libraries/font-awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="icon" href="img/programacion.ico">
+        <title>Portafolio John Villegas</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <!--Aqui empieza el menu para el encabezado-->
+        <div class="contenedor-cabecera">
+            <header>
+                <div class="logo-jv">
+                    <a href="#">John</a>
+                </div>
+                <nav id="navegacion">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#cv" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                        <li><a href="#reflexion" onclick="seleccionar()">REFLEXIONES</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+
+        <!--Aqui empieza la seccion de inicio-->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-imagen">
+                    <img src="img/foto-perfil-jv.png" alt="Foto de perfil">
+                </div>
+                <h1>JOHN VILLEGAS</h1>
+                <h2>Desarrollador Full Stack - Psicólogo</h2>
+                <div class="redes">
+                   <a href="https://www.linkedin.com/in/john-villegas-castaneda/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                   <a href="https://github.com/JohnVillegas" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Aqui empieza la seccion sobre mí-->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy John Villegas.</span> Apasionado por la tecnología, el desarrollo web y el área social, cuento con conocimientos para el desarrollo Front End y Backend, utilizando lenguajes y herramientas como HTML, CSS, JavaScript, Java y SQL. Tengo una sólida trayectoria en el diseño de planes de formación, desarrollo de habilidades blandas y liderazgo de equipos de trabajo.</p> 
+
+                <div class="fila">
+                    <!--Aqui se incluyen en filas los datos personales-->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Teléfono</strong>
+                                (+57) 300 891 6779
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                jvillegas.casta@gmail.com
+                            </li>
+                            <li>
+                                <strong>Website</strong>
+                                www.example.com
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Bogotá D. C., CO
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>FREELANCE</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Aqui se incluyen los interes personales-->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-music"></i>
+                                <span>MÚSICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <span>DEPORTE</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-clapperboard"></i>
+                                <span>PELÍCULAS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-vihara"></i>
+                                <span>BUDISMO</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-feather-pointed"></i>
+                                <span>ESCRITURA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>TECNOLOGÍA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </section>
+
+        <!--Aqui empieza la seccion skills-->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!--Habilidades Tecnicas-->
+                    <div class="col">
+                      <h3>Technical Skills</h3>  
+                      <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Habilidades Profesionales-->
+                    <div class="col">
+                        <h3>Professional Skills</h3>  
+                        <div class="skill">
+                          <span>Comunicación</span>
+                          <div class="barra-skill">
+                              <div class="progreso">
+                                  <span>90%</span>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <span>Trabajo en equipo</span>
+                          <div class="barra-skill">
+                              <div class="progreso">
+                                  <span>95%</span>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <span>Liderazgo</span>
+                          <div class="barra-skill">
+                              <div class="progreso">
+                                  <span>85%</span>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <span>Creatividad</span>
+                          <div class="barra-skill">
+                              <div class="progreso">
+                                  <span>98%</span>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <span>Orientación al detalle</span>
+                          <div class="barra-skill">
+                              <div class="progreso">
+                                  <span>88%</span>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Aqui empieza la seccion de CV-->
+        <section id="cv" class="cv">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Full Stack Java Developer Junior</h4>
+                            <span class="casa">Generation Colombia</span>
+                            <span class="fecha">11/2023 - En curso</span>
+                            <p>Especialista en el desarrollo de sitios web que integra el diseño de la experiencia del cliente en una página (front end), así como la programación y mantenimiento de la arquitectura interna del sitio (back end).</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Psicólogo</h4>
+                            <span class="casa">Corporación Universitaria Minutos de Dios</span>
+                            <span class="fecha">02/2012 - 08/2016</span>
+                            <p>Formación profesional orientada a la planificación, desarrollo y responsabilidad social a nivel de  individuos,  grupos, comunidades y organizaciones en la intervención de problemas humanísticos desde sus diferentes ámbitos de aplicación interdisciplinar.</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Programador de Software</h4>
+                            <span class="casa">Servicio Nacional de Aprendizaje</span>
+                            <span class="fecha">06/2009 - 06/2010</span>
+                            <p>Técnico profesional en la creación, implementación y soporte de aplicaciones de software, utilizando lenguajes de programación y sistemas de bases de datos, con un enfoque social dirigido a la calidad de vida de las personas, la dinámica y la economía empresarial y del país.</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col derecha">
+                        <h3 id="h3ex">Experiencia Profesional</h3>
+                        <div class="item der">
+                            <h4>Líder de Formación</h4>
+                            <span class="casa">IQ Outsourcing</span>
+                            <span class="fecha">12/2019 - 12/2022</span>
+                            <p>Responsable del diseño, desarrollo e implementación del programa de formación para los distintos niveles jerárquicos de la organización, así como la evaluación del proceso formativo y la detención de las necesidades específicas.</p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Instructor de Habilidades blandas</h4>
+                            <span class="casa">Instituto Tecnisistemas</span>
+                            <span class="fecha">12/2019 - 12/2022</span>
+                            <p>Líder de habilidades blandas, responsable del desarrollo eficaz de los programas de formación dirigidos a las empresas y organizaciones en temas de empleabilidad, liderazgo, comunicación, trabajo en equipo, entre otras.</p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Aqui empieza la seccion de Portafolio-->
+        <section id="portafolio" class="portafolio">
+            <div class="contenido-seccion">
+                <h2>Portafolio</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/Portafolios.jpg" alt="Portafolio">
+                        <div class="overlay">
+                            <h3>Portafolio 1</h3>
+                            <p>Descripción del portafolio</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/Portafolios.jpg" alt="Portafolio">
+                        <div class="overlay">
+                            <h3>Portafolio 2</h3>
+                            <p>Descripción del portafolio</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/Portafolios.jpg" alt="Portafolio">
+                        <div class="overlay">
+                            <h3>Portafolio 3</h3>
+                            <p>Descripción del portafolio</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/Portafolios.jpg" alt="Portafolio">
+                        <div class="overlay">
+                            <h3>Portafolio 4</h3>
+                            <p>Descripción del portafolio</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/Portafolios.jpg" alt="Portafolio">
+                        <div class="overlay">
+                            <h3>Portafolio 5</h3>
+                            <p>Descripción del portafolio</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/Portafolios.jpg" alt="Portafolio">
+                        <div class="overlay">
+                            <h3>Portafolio 6</h3>
+                            <p>Descripción del portafolio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Aqui empieza la seccion de Reflexiones-->
+        <section id="reflexion" class="reflexion">
+            <div class="contenido-seccion">
+                <h2>Reflexiones de aprendizaje</h2>
+                <div class="blog">
+                    <div class="aprendizajes">
+                        <img src="img/Reflexion1.jpg" alt="Reflexiones">
+                        <h3>El comienzo de un camino...</h3>
+                        <p>Generation me ha dado la oportunidad y la experiencia enriquecedora de participar de este gran proyecto formativo de Desarrollo web Full Stack, permitiéndome adquirir los conocimientos y habilidades necesarias para mi futuro profesional. En general estoy muy satisfecho con toda la ayuda recibida por parte del equipo de instructores y mentores, gracias, infinita.</p>
+                        <button>
+                            Ir al Blog <i class="fa-solid fa-book-open"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <div class="aprendizajes">
+                        <img src="img/Reflexion2.jpg" alt="Reflexiones">
+                        <h3>Desafíos y retos...</h3>
+                        <p>Las decisiones que tomamos para nuestro futuro en muchas ocasiones conllevan cambios, y para mi este ha sido un gran reto profesional. En las semanas en las que he estado en el Bootcam me he dado cuenta de que tenemos mucho que trabajar por este sueño, que el conocimiento por sí solo no basta, y que es importante desarrollar las habilidades blandas para tener mentalidades de crecimiento. Voy por buen camino, y espero con ansia seguir disfrutando de este maravilloso proceso.</p>
+                        <button>
+                            Ir al Blog <i class="fa-solid fa-book-open"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Aqui empieza la seccion de Contacto-->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>Contacto</h2>
+                <div class="fila">
+                    <!--Formulario-->
+                    <div class="col" action="https://formsubmit.co/karim.baltazar1@gmail.com" method="POST" target="_blank" autocomplete="on">
+                        <form action="https://formsubmit.co/karim.baltazar1@gmail.com" method="POST" target="_blank" autocomplete="on">
+                        <input type="text" name="Nombre: " placeholder="Tú Nombre" required>
+                        <input type="number" name="Telefono: " placeholder="Número de Telefóno" required>
+                        <input type="email" name="Email: " placeholder="Dirección de Correo" required>
+                        <input type="text" name="Asunto: " placeholder="Asunto" required>
+                        <textarea name="Mensaje: " id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                        </form>
+                    </div>
+                    <!--Mapa de Direccion-->
+                    <div class="col">
+                        <img src="img/Mapa.png" alt="Mapa">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Encuéntrame: <br>Bogotá D. C., Colombia
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    Llámame: <br>(+57) 300 891 6779
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Escríbeme: <br>jvillegas.casta@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Aqui empieza la seccion de Footer-->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/john-villegas-castaneda/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/JohnVillegas" target="_blank"><i class="fa-brands fa-github"></i></a>
+             </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
